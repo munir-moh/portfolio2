@@ -917,8 +917,8 @@ footer {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .hero-photo-wrap { display: flex; justify-content: center; order: 0; }
-  .hero-photo-frame { width: 220px; height: 270px; margin-top: 2rem; }
+  .hero-photo-wrap { display: flex; justify-content: center; order: -1; }
+  .hero-photo-frame { width: 220px; height: 270px; }
 
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .skills-grid { grid-template-columns: 1fr; gap: 2.5rem; }
