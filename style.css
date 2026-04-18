@@ -90,6 +90,12 @@ nav {
 }
 .nav-logo span { color: var(--gold); }
 
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(40%) saturate(500%) hue-rotate(5deg) brightness(95%);
+}
+
 .nav-links {
   display: flex;
   gap: 2.25rem;
@@ -595,6 +601,7 @@ section {
   background: linear-gradient(135deg, rgba(201,169,110,0.04), transparent);
   opacity: 0;
   transition: opacity 0.4s;
+  pointer-events: none;
 }
 .project-card:hover { border-color: var(--accent); transform: translateY(-5px); }
 .project-card:hover::before { opacity: 1; }
@@ -910,8 +917,8 @@ footer {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .hero-photo-wrap { display: flex; justify-content: center; order: -1; }
-  .hero-photo-frame { width: 220px; height: 270px; }
+  .hero-photo-wrap { display: flex; justify-content: center; order: 0; }
+  .hero-photo-frame { width: 220px; height: 270px; margin-top: 2rem; }
 
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .skills-grid { grid-template-columns: 1fr; gap: 2.5rem; }
